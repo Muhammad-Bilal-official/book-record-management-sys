@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Book Record Management System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="hamburgerIcon">
+        <img src="img/Hamburger_icon.svg.png" alt=" Click Here to see Menu List">
+    </div>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="img/logo.png" alt="This is logo">
+            <h1>Bilal Libarary</h1>
+        </div>
+        <div id="nav-menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Services</a></li>
+            </ul>
+        </div>
+        <div id="nav-buttons">
+            <input class="btn" id="login-button" type="button" value="login">
+            <input class="btn" id="registration-button" type="button" value="Register">
+        </div>
+    </nav>
+
+    <section id="main-section">
+        <h1 class="text-center">Welcome to Our Online Libarary</h1>
+        <p class="text-center">This is the place where you can Register free to Manage your Books in labarary. </p>
+        <p class="text-center">You can also read books in a well mamaged way in our Books Gallery</p>
+        
+    </section>
+    <form class="forms" id="login-form">
+        <div class="close-button-container">
+            <a id="login-close-button" href="#" class="close-button"  >X</a>
+        </div>
+        <div class="text-center">
+            <h1>Login Form</h1>
+        </div>
+        <div class="form-input">
+            <input type="text" name="username" placeholder="Email or Phone"  required>
+        </div>
+        <div class="form-input">
+            <input type="text" name="username" placeholder="Password" required>
+        </div>
+        <div class="form-input">
+            <input class="btn" type="submit" value="Login">
+        </div>
+    </form>
+    <form class="forms" id="registration-form">
+        <div class="close-button-container">
+            <a  id="registration-close-button" href="#" class="close-button"  >X</a>
+        </div>
+        <div class="text-center">
+            <h1>Registration Form</h1>
+        </div>
+        <div class="form-input">
+            <input type="text" name="firstName" placeholder="First Name"  required>
+        </div>
+        <div class="form-input">
+            <input type="text" name="lastName" placeholder="Last Name"  required>
+        </div>
+        <div class="form-input">
+            <input type="text" name="username" placeholder="Email or Phone"  required>
+        </div>
+        <div class="form-input">
+            <input type="password" name="password" placeholder="Password" required>
+        </div>
+        <div class="form-input">
+            <input type="text" name="confirmPassword" placeholder="Confirm Password" required>
+        </div>
+        <div class="form-input">
+            <input class="btn" type="submit" value="Register">
+        </div>
+    </form>
+    <script src="js/effects.js"></script>
+</body>
+
+</html>

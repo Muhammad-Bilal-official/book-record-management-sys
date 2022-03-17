@@ -1,0 +1,313 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #440202;
+}
+
+#hamburgerIcon img {
+    width: 55px;
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    filter: invert(100%);
+    display: none;
+}
+
+/* Navigation Bar Styling */
+
+#navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* logo In Navigation Styling */
+
+#logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    width: 20%;
+}
+
+#logo img {
+    width: 60px;
+    margin-top: 5px;
+}
+
+#logo h1 {
+    margin: 2px 0px 1px 0px;
+    padding-left: 11px;
+    font-size: 25px;
+}
+
+/* Menu In Navigation Styling */
+
+#nav-menu {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+#nav-menu li {
+    padding: 12px 20px;
+    list-style: none;
+    display: inline;
+}
+
+#nav-menu a {
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+#nav-menu a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+}
+
+#nav-buttons {
+    width: 30%;
+}
+
+/* Buttons In Navigation Styling */
+
+#nav-buttons {
+    text-align: right;
+    padding-right: 45px;
+}
+
+.btn {
+    border: 2px solid white;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    width: 100px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#nav-buttons .btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Main Section Styling */
+
+#main-section {
+    /* border: 2px solid white; */
+    background-color: #170a0a(0, 0, 0, 0.3);
+    color: #f5ecec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 420px;
+    width: 80%;
+    margin: auto;
+}
+
+#main-section::before {
+    content: "";
+    position: absolute;
+    background: url(../img/background.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 80%;
+    top: 0px;
+    left: 0px;
+    /* opacity: 0.8; */
+    z-index: -1;
+}
+
+#main-section h1 {
+    font-size: 4rem;
+}
+
+#main-section p {
+    font-size: 1.5rem;
+    margin: 0px 250px;
+}
+
+/* login Form Styles */
+
+.forms {
+    position: absolute;
+    top: 2%;
+    left: 20%;
+    border: 2px solid black;
+    width: 60%;
+    min-height: 400px;
+    margin: 100px auto;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+#login-form {
+    display: none;
+}
+
+#registration-form {
+    display: none;
+}
+
+.close-button-container {
+    position: relative;
+}
+
+.close-button {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+.close-button:hover {
+    color: red;
+}
+
+.forms h1 {
+    padding: 5px;
+    margin-top: 70px;
+    margin-bottom: 5px;
+    font-size: 2.5rem;
+    text-decoration: underline;
+}
+
+.form-input {
+    padding: 5px;
+}
+
+.forms input[type="text"], input[type="password"] {
+    font-family: 'Ubuntu', sans-serif;
+    width: 70%;
+    display: block;
+    margin: auto;
+    padding: 10px 20px;
+    margin: auto;
+    border-radius: 20px;
+    font-size: 1.1rem;
+}
+
+.forms input[type="submit"] {
+    display: block;
+    margin: auto;
+    width: 60%;
+    margin-bottom: 30px;
+}
+
+/* Utility Classes */
+
+.text-center {
+    text-align: center;
+}
+
+@media screen and (max-width:1250px) {
+    #hamburgerIcon img {
+        display: block;
+    }
+    #navbar {
+        flex-direction: column;
+    }
+    
+    #logo {
+        flex-direction: column;
+        width: 100%;
+    }
+    #nav-menu {
+        width: 100%;
+    }
+    #nav-menu ul {
+        display: none;
+        flex-direction: column;
+    }
+    #nav-menu li {
+        margin: 8px 10px;
+    }
+    #nav-menu li a {
+        font-size: 20px;
+    }
+    #main-section p {
+        font-size: 0.9rem;
+        margin: 0px;
+    }
+    #main-section h1 {
+        font-size: 1.5rem;
+    }
+    #nav-buttons {
+        /* border: 2px solid black; */
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0px;
+        position: absolute;
+        bottom: -20px;
+    }
+    #nav-buttons .btn {
+        margin-bottom: 10px;
+        width: 50%;
+        font-size: 14px;
+        background-color: transparent;
+    }
+    .forms {
+        top: 2%;
+    }
+    .form-input h1 {
+        font-size: 1.5rem;
+    }
+    .forms input[type="text"], input[type="password"] {
+        width: 90%;
+        padding: 5px 10px;
+        font-size: 0.8rem;
+    }
+    .forms h1 {
+        font-size: 1.5rem;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    #hamburgerIcon img {
+        left: 5px;
+    }
+    #main-section {
+        width: 100%;
+        height: 422px;
+    }
+    #main-section p {
+        font-size: 0.7rem;
+    }
+    #main-section h1 {
+        font-size: 1rem;
+    }
+    .forms {
+        top: 2%;
+        left: 0;
+        width: 100%;
+        height: auto;
+    }
+    .forms input[type="text"], input[type="password"] {
+        width: 90%;
+        padding: 5px 10px;
+        font-size: 0.8rem;
+    }
+    
+    #nav-menu li {
+        margin: -5px;
+    }
+    #nav-menu li a {
+        font-size: 20px;
+    }
+}
